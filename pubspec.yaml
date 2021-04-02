@@ -1,0 +1,29 @@
+name: text_to_speech
+description: Text to speech demo
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_tts: ^3.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/categories/
+    - assets/images/categories/animals/
+    - assets/images/categories/fruits/
+    - assets/images/categories/vegetables/
+    - assets/images/categories/vehicles/
+    - assets/images/categories/birds/
+    - assets/images/categories/flowers/
