@@ -17,7 +17,7 @@ We will be using the a lot of images. You can find them in the assets folder.
 ## Step 1 :  Install Packages
 
 Place the below dependencies in your `pubspec.yaml` file and run `flutter pub get`
-```
+```dart
   
   flutter_tts: ^3.0.0
   
@@ -27,7 +27,7 @@ Place the below dependencies in your `pubspec.yaml` file and run `flutter pub ge
 
 Create the 1st model class file as `items.dart`
 
-```
+```dart
 class Items{
   String name;
   String image;
@@ -37,7 +37,7 @@ class Items{
 
 Create another model class which holds this model class as `categories.dart`
 
-```
+```dart
 import 'package:text_to_speech/models/items.dart';
 
 class Categories {
@@ -52,7 +52,7 @@ class Categories {
 
 `constants.dart` is responsible for making rest api calls.
 
-```
+```dart
 import 'package:text_to_speech/models/categories.dart';
 import 'package:text_to_speech/models/items.dart';
 
@@ -122,7 +122,7 @@ class Constants {
 
 `home_page.dart` be the home page of our app.
 
-```
+```dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:text_to_speech/screens/items_page.dart';
@@ -195,7 +195,7 @@ On our home page we are displaying a grid of categories from constants i.e. anim
 
 `items_page.dart` displays the actual items which on clicked convert the name of item to speech.
 
-```
+```dart
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
